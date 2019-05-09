@@ -16,7 +16,7 @@ class Skeleton(Plugin):
         subparser.set_defaults(command=self.run)
         subparser.add_argument("text", type=str, help="Some dummy argument")
 
-    def run(self, msg, parser, args):
+    def run(self, msg, parser, args, peer):
         self._bot.write(args.text)
 
 if __name__ == "__main__":
