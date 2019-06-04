@@ -10,14 +10,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='stormbot-skeleton',
-      version='1.2.1',
+      version='2.0b1',
       description='Skeleton plugin for stormbot',
       long_description=long_description,
       author='Paul Fariello',
       author_email='paul@fariello.eu',
       url='https://github.com/manoir/stormbot-skeleton',
       packages=find_packages(),
-      install_requires=['stormbot'],
+      install_requires=['stormbot>=2.0b1'],
       entry_points={'stormbot.plugins': ['skeleton = stormbot_skeleton:Skeleton']},
       classifiers=['Environment :: Console',
                    'Operating System :: POSIX',
